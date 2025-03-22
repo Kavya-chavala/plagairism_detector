@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Plagiarism Detector</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 AI-Based Plagiarism Detection System</h1>
+        </header>
+
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <h2>Upload Student Submissions</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <input type="file" name="submissions" id="fileInput" multiple>
+                <button type="button" onclick="uploadFiles()">Upload Files</button>
+            </form>
+            <p id="uploadStatus"></p>
+        </section>
+
+        <!-- Run Plagiarism Check Section -->
+        <section class="check-section">
+            <h2>Run Plagiarism Check</h2>
+            <button onclick="checkPlagiarism()">🔍 Check Plagiarism</button>
+            <p id="checkStatus"></p>
+        </section>
+
+        <!-- Show Report Section -->
+        <section class="report-section">
+            <h2>📊 Plagiarism Report</h2>
+            <iframe id="reportFrame" src="" frameborder="0" width="100%" height="400px"></iframe>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
